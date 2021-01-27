@@ -1,0 +1,3 @@
+include ':dynamic-table'
+include ':app'
+rootProject.name = "DemoTask"

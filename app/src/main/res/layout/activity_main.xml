@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout"
+        />
+    <EditText
+        android:id="@+id/edtPlus"
+        android:layout_below="@+id/tableLayout"
+        android:layout_width="100px"
+        android:layout_height="110px"
+        android:background="@drawable/border_with_purple_color"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="+"/>
+
+    <EditText
+        android:id="@+id/edtPlusCol"
+        android:layout_toRightOf="@+id/tableLayout"
+        android:layout_width="100px"
+        android:layout_height="110px"
+        android:background="@drawable/border_with_purple_color"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="+"/>
+</RelativeLayout>
+
+        </HorizontalScrollView>
+    </ScrollView>
+</RelativeLayout>
